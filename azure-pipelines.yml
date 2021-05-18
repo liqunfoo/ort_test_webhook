@@ -5,8 +5,8 @@
 
 resources:
   webhooks:
-    - webhook: TorchOrtWebhookTriggerAlias
-      connection: IncomingWebhookConnection
+    - webhook: TorchOrtWebhookTrigger
+      connection: TorchOrtWebhookTrigger
       filters:                                 ### List of JSON parameters to filter; Parameters are AND'ed
         - path: JSONParameterPath              ### JSON path in the payload
           value: JSONParameterExpectedValue    ### Expected value in the path provided
